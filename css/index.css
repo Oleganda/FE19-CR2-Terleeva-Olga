@@ -1,0 +1,225 @@
+body {
+    background-color: rgb(249, 237, 246);
+}
+
+/*  styling navbar  */
+
+nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(13, 110, 253);
+}
+
+.logo-icon {
+    width: 50px;
+    
+}
+
+/* styling of notification circle */
+
+#notification-circle {
+    
+    background-color: red;
+    color: white;
+    font-size: small;
+   text-align: center;
+   margin: 10px 10px 0 -17px;
+   border-radius: 100%;
+   width: 20px;
+   height: 20px;
+}
+
+/* end styling of notification circle */
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.myplanner-text {
+    font-weight:bold;
+    font-size: large;
+    color:white;
+}
+
+.menu-items {
+    text-decoration: none;
+    color: white;
+    font-size: small;
+    margin-left: 5px;
+}
+/* end of styling navbar  */
+
+
+/* main photo styling */
+
+#main-photo {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.image-notebook {
+    object-fit: cover;
+    position: absolute;
+}
+
+.text {
+text-align: center;
+width: 20%;
+margin: auto;
+opacity: 70%;
+padding-top: 200px;
+}
+
+.main-text {
+
+background-color: rgb(239, 41, 74);
+color: white;
+font-size: x-large  ;
+padding: 20px;
+}
+/* end of main photo styling */
+
+/* styling of sort by line */
+.sort-by{
+    display: flex;
+    width: 100%;
+    background-color: rgb(13, 110, 253);
+    justify-content: space-around;
+
+}
+
+.weekly-tasks {
+    font-size: larger;
+    padding-top: 30px;
+    font-weight: bold;
+    color: white;
+    margin: 0 0 25px -45px;
+}
+
+.dropdown-btn{
+    background-color: rgb(245, 49, 186);
+    border: 1px solid rgb(245, 49, 186);
+    margin: 25px -40px 0 0;
+}
+
+.dropdown-btn:hover,
+.dropdown-btn:active {
+background-color: rgb(236, 116, 200);
+border: 1px solid rgb(236, 116, 200);}
+
+
+/* styling of grid */
+
+#plan-main {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 30px;
+    margin: 30px 0 30px 0;
+    
+}
+
+/*styling of tasks-cards*/
+
+.done-btn {
+    background-color: rgb(245, 49, 186);
+    border: 1px solid rgb(245, 49, 186);
+}
+
+.done-btn:hover {background-color: rgb(236, 116, 200);
+    border: 1px solid rgb(236, 116, 200);
+    
+}
+
+.priority{
+    margin-left: 5px;
+    background-color: green;
+    color: black;
+    font-size: small;
+    border-radius: 10%;
+    padding: 5px 9px 5px 9px;
+    text-align: center;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+
+
+/* styling of images in tasks-card */
+
+.all-images-style {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+/* styling of footer */
+footer {
+    background-color:#0d6efd;
+    color: white;
+    width: 100%;}
+
+    .logo {
+        width: 30px;
+        cursor: pointer;
+    }
+
+    .social-networks {
+
+        height: 40px;
+        display: flex;
+        list-style-type: none;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    .copyrights {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 10px 0;
+    }
+
+    .form-search {
+       margin: auto;
+       margin-top: 30px;
+    }
+
+    .btn-search:hover {
+        background-color: rgb(240, 67, 95);
+    }
+
+    
+@media screen and (max-width: 992px) {
+#plan-main {
+grid-template-columns: repeat(2, 400px);
+margin-left: 100px;
+}
+}
+
+@media screen and (max-width: 700px) 
+{
+#plan-main {
+
+grid-template-columns: repeat(1, 500px);
+width: 100%; 
+}
+
+.text {
+text-align: center;
+width: 50%;
+margin: auto;
+opacity: 70%;
+padding-top: 200px;
+}
+
+}
+

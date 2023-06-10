@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    
+    <!-- navbar -->
+      <nav>
+        <div class="navigation">
+          <div>
+            <div> <span class="myplanner-text">MY PLANNER</span>
+               <a class="menu-items" href=""
+              >Home</a>
+               <a class="menu-items" href=""
+              >Tasks</a>
+               <a class="menu-items" href=""
+              >Settings</a>
+          </div>
+        </div>
+          <div></div>
+        </div>
+       <div class="icon-bell">  
+          <img class="logo-icon" src="images/notification.svg" alt="" />
+          </div>
+          <div id="notification-circle">1 </div>
+        </div>
+      </nav>
+
+
+    <!-- main container -->
+
+    <div id="main-container">
+      <div id="main-photo">
+        <img
+          class="image-notebook"
+          src="images/coverimg.jpg"
+          width="100%"
+          ;
+          height="100%"
+          alt=""
+        />
+        <div class="text"><p class="main-text">My Weekly Planner</p></div>
+      </div>
+      <div id="container-grid" height="700px"></div>
+
+<!-- sort by div -->
+<div class="sort-by">
+      <div class="weekly-tasks">Weekly Tasks</div>
+      <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Sort By
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Importance</a></li>
+    <li><a class="dropdown-item" href="#">Deadline</a></li>
+    <li><a class="dropdown-item" href="#">Random</a></li>
+  </ul>
+</div>
+
+</div>
+
+
+
+
+
+      <!-- all code from this div in JS -->
+        <div id="plan-main"></div> 
+       
+    </div>
+
+
+
+
+    <!-- footer -->
+    <footer>
+      <div>
+        <ul class="social-networks">
+          <li><img class="logo" src="images/facebook.svg" /></li>
+          <li><img class="logo" src="images/instagram.svg" /></li>
+          <li><img class="logo" src="images/twitter-2.svg" /></li>
+          <li><img class="logo" src="images/whatsapp.svg" /></li>
+          <li><img class="logo" src="images/youtube.svg" /></li>
+        </ul>
+      </div>
+
+      <!-- search bar in footer -->
+
+      <div>
+        <form class="d-flex w-50 form-search" role="search">
+          <div class="input-group mb-3">
+            <input
+              type="search"
+              class="form-control rounded-start-5 border-secondary-subtle"
+              placeholder="Search"
+              aria-label="Search"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-secondary rounded-end-5 border-secondary-subtle search btn-search"
+              type="button"
+              id="button-addon2"
+            >
+              <img src="images/search.svg" alt="search" width="30px" />
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="copyrights">@ CodeFactory 2023</div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
